@@ -3,6 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
+  var randm= Math.random();
   roundd= Math.round(randm);
   res.send(`Round function applied to ${randm} is : ${roundd}`);
 });
